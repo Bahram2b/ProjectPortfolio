@@ -20,14 +20,14 @@
 <div class="container">
     <section class="screen left tiles">
 
-        <img src="frontend/landing/img/left.jpg" />
+{{--        <img src="frontend/landing/img/left.jpg" />--}}
 
-{{--        <div class="info">--}}
-{{--            <h1 class="red-wine">Red Wines</h1>--}}
-{{--            <button>--}}
-{{--                <a href="#" class="button">Edited photos</a>--}}
-{{--            </button>--}}
-{{--        </div>--}}
+        <div class="info">
+          
+            <button>
+                <a href="#" class="button">Edited photos</a>
+            </button>
+        </div>
     </section>
     <section class="screen right">
         <div class="info">

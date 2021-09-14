@@ -11,20 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48a359be-9517-448c-bc14-48e0b4d03e00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Landing.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/homePartials/sidemenu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/css/Deleted/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/css/Deleted/util.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/css/fontAwesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/css/templatemo-main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/templatemo-main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/upload/user_images/1631345992DSC09002-Edit22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/homePartials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/homePartials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/homeMaster.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/homeMaster.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/landing/css/landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/landing/css/landing.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +242,7 @@
       <workItem from="1631445697119" duration="1503000" />
       <workItem from="1631447613872" duration="12270000" />
       <workItem from="1631511696586" duration="9677000" />
-      <workItem from="1631601071952" duration="10458000" />
+      <workItem from="1631601071952" duration="10796000" />
     </task>
     <servers />
   </component>

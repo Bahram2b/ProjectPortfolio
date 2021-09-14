@@ -43,7 +43,6 @@ html, body {
     height: 100%;
     background: rgba(10, 8, 70, 0.5);
 }
-
 .info {
     position: absolute;
     left: 50%;
@@ -100,7 +99,7 @@ button {
     color: white;
 }
 .screen.left, .screen.right, .screen.right:before, .screen.left:before {
-    transition: 700ms all ease-in-out;
+    transition: 800ms all ease-in-out;
 }
 .hover-left .left, .hover-right .right {
     width: 75%;

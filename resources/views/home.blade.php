@@ -18,15 +18,7 @@ https://templatemo.com/tm-526-vanilla
 -->
 
 
-<div class="fixed-side-navbar">
-    <ul class="nav flex-column">
-        <li class="nav-item"><a class="nav-link" href="#home"><span>Intro</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#services"><span>Services</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#portfolio"><span>Portfolio</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#our-story"><span>Our Story</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact-us"><span>Contact Us</span></a></li>
-    </ul>
-</div>
+
 
 <div class="parallax-content baner-content" id="home">
     <div class="container">
@@ -34,7 +26,8 @@ https://templatemo.com/tm-526-vanilla
             <h1>Morteza Jelokhani</h1>
             <span><em>Portfolio</em> 2021</span>
             <div class="primary-button">
-                <a href="#services">Discover More</a>
+{{--                <a href="#services">Discover More</a>--}}
+                <a href="/landing">Discover More</a>
             </div>
         </div>
     </div>
@@ -105,7 +98,7 @@ https://templatemo.com/tm-526-vanilla
                 <div id="owl-testimonials" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="testimonials-item">
-                            <a href="img/1st-big-item.jpg" data-lightbox="image-1"><img src="img/1st-item.jpg" alt=""></a>
+                            <a href="frontend/img/1st-big-item.jpg" data-lightbox="image-1"><img src="frontend/img/1st-item.jpg" alt=""></a>
                             <div class="text-content">
                                 <h4>Awesome Note Book</h4>
                                 <span>$18.00</span>
@@ -114,7 +107,7 @@ https://templatemo.com/tm-526-vanilla
                     </div>
                     <div class="item">
                         <div class="testimonials-item">
-                            <a href="img/2nd-big-item.jpg" data-lightbox="image-1"><img src="img/2nd-item.jpg" alt=""></a>
+                            <a href="frontend/img/2nd-big-item.jpg" data-lightbox="image-1"><img src="frontend/img/2nd-item.jpg" alt=""></a>
                             <div class="text-content">
                                 <h4>Antique Decoration Photo</h4>
                                 <span>$27.00</span>
@@ -123,7 +116,7 @@ https://templatemo.com/tm-526-vanilla
                     </div>
                     <div class="item">
                         <div class="testimonials-item">
-                            <a href="img/3rd-big-item.jpg" data-lightbox="image-1"><img src="img/3rd-item.jpg" alt=""></a>
+                            <a href="frontend/img/3rd-big-item.jpg" data-lightbox="image-1"><img src="frontend/img/3rd-item.jpg" alt=""></a>
                             <div class="text-content">
                                 <h4>Work Hand Bag</h4>
                                 <span>$36.00</span>
@@ -132,7 +125,7 @@ https://templatemo.com/tm-526-vanilla
                     </div>
                     <div class="item">
                         <div class="testimonials-item">
-                            <a href="img/4th-big-item.jpg" data-lightbox="image-1"><img src="img/4th-item.jpg" alt=""></a>
+                            <a href="frontend/img/4th-big-item.jpg" data-lightbox="image-1"><img src="frontend/img/4th-item.jpg" alt=""></a>
                             <div class="text-content">
                                 <h4>Smart Watch</h4>
                                 <span>$45.00</span>
@@ -141,7 +134,7 @@ https://templatemo.com/tm-526-vanilla
                     </div>
                     <div class="item">
                         <div class="testimonials-item">
-                            <a href="img/5th-big-item.jpg" data-lightbox="image-1"><img src="img/5th-item.jpg" alt=""></a>
+                            <a href="frontend/img/5th-big-item.jpg" data-lightbox="image-1"><img src="frontend/img/5th-item.jpg" alt=""></a>
                             <div class="text-content">
                                 <h4>PC Tablet Draw</h4>
                                 <span>$63.00</span>
@@ -150,7 +143,7 @@ https://templatemo.com/tm-526-vanilla
                     </div>
                     <div class="item">
                         <div class="testimonials-item">
-                            <a href="img/6th-big-item.jpg" data-lightbox="image-1"><img src="img/6th-item.jpg" alt=""></a>
+                            <a href="frontend/img/6th-big-item.jpg" data-lightbox="image-1"><img src="frontend/img/6th-item.jpg" alt=""></a>
                             <div class="text-content">
                                 <h4>Healthy Milkshake</h4>
                                 <span>$77.00</span>
@@ -159,7 +152,7 @@ https://templatemo.com/tm-526-vanilla
                     </div>
                     <div class="item">
                         <div class="testimonials-item">
-                            <a href="img/2nd-big-item.jpg" data-lightbox="image-1"><img src="img/2nd-item.jpg" alt=""></a>
+                            <a href="frontend/img/2nd-big-item.jpg" data-lightbox="image-1"><img src="frontend/img/2nd-item.jpg" alt=""></a>
                             <div class="text-content">
                                 <h4>Antique Decoration Photo</h4>
                                 <span>$84.50</span>
@@ -168,7 +161,7 @@ https://templatemo.com/tm-526-vanilla
                     </div>
                     <div class="item">
                         <div class="testimonials-item">
-                            <a href="img/1st-big-item.jpg" data-lightbox="image-1"><img src="img/1st-item.jpg" alt=""></a>
+                            <a href="frontend/img/1st-big-item.jpg" data-lightbox="image-1"><img src="frontend/img/1st-item.jpg" alt=""></a>
                             <div class="text-content">
                                 <h4>Awesome Notes Book</h4>
                                 <span>$96.75</span>
@@ -189,19 +182,19 @@ https://templatemo.com/tm-526-vanilla
                 <div class="wrapper">
                     <section id="first-tab-group" class="tabgroup">
                         <div id="tab1">
-                            <img src="img/1st-tab.jpg" alt="">
+                            <img src="frontend/img/1st-tab.jpg" alt="">
                             <p>Please do not re-distribute our template ZIP file on your template collection sites. You can make a screenshot and a link back to our website. This template can be used for personal or commercial purposes by end-users.</p>
                         </div>
                         <div id="tab2">
-                            <img src="img/2nd-tab.jpg" alt="">
+                            <img src="frontend/img/2nd-tab.jpg" alt="">
                             <p>Aliquam eu ultrices risus, sed condimentum diam. Duis risus nulla, elementum vitae nisi a, ornare maximus nisl. Morbi et vehicula est. Cras at vulputate justo. Cras eu nulla metus. Ut et pretium velit. Pellentesque at neque tristique dui tempor venenatis.</p>
                         </div>
                         <div id="tab3">
-                            <img src="img/3rd-tab.jpg" alt="">
+                            <img src="frontend/img/3rd-tab.jpg" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia ligula est, at venenatis ex iaculis quis. Morbi sollicitudin nulla eget odio pellentesque, sed cursus diam iaculis.</p>
                         </div>
                         <div id="tab4">
-                            <img src="img/4th-tab.jpg" alt="">
+                            <img src="frontend/img/4th-tab.jpg" alt="">
                             <p>Duis risus nulla, elementum vitae nisi a, ornare maximus nisl. Morbi et vehicula est. Cras at vulputate justo. Cras eu nulla metus. Ut et pretium velit. Pellentesque at neque tristique.</p>
                         </div>
                     </section>

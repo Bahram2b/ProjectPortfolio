@@ -5,79 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-
     <link rel="icon" type="image/png" href="{{'frontend/images/icons/favicon.png'}}"/>
+    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{'frontend/fonts/font-awesome-4.7.0/css/font-awesome.min.css'}}">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{'frontend/css/bootstrap.min.css'}}">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{'frontend/css/hero-slider.css'}}">
     <!--===============================================================================================-->
-
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{'frontend/css/templatemo-main.css'}}">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{'frontend/css/owl-carousel.css'}}">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-
     <!--===============================================================================================-->
-{{--    <link rel="stylesheet" type="text/css" href="{{'frontend/vendor/css-hamburgers/hamburgers.min.css'}}">--}}
-{{--    <!--===============================================================================================-->--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{'frontend/vendor/animsition/css/animsition.min.css'}}">--}}
-{{--    <!--===============================================================================================-->--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{'frontend/vendor/select2/select2.min.css'}}">--}}
-{{--    <!--===============================================================================================-->--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{'frontend/vendor/daterangepicker/daterangepicker.css'}}">--}}
-{{--    <!--===============================================================================================-->--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{'frontend/vendor/slick/slick.css'}}">--}}
-{{--    <!--===============================================================================================-->--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{'frontend/vendor/MagnificPopup/magnific-popup.css'}}">--}}
-{{--    <!--===============================================================================================-->--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{'frontend/vendor/perfect-scrollbar/perfect-scrollbar.css'}}">--}}
-{{--    <!--===============================================================================================-->--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{'frontend/css/util.css'}}">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{'frontend/css/main.css'}}">--}}
-{{--    <!--===============================================================================================-->--}}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!--===============================================================================================-->
     <script src="{{'frontend/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'}}"></script>
+    <!--===============================================================================================-->
 </head>
 <body>
 {{--<body class="animsition">--}}
 
 <!-- Header -->
-{{--@include('homePartials.header')--}}
+{{----}}
 <!-- End Header -->
 <!-- Cart -->
-
-
+<!-- Sidebar menu -->
+@include('homePartials.sidemenu')
+<!-- Sidebar menu End-->
+<!-- Home content-->
 
 @yield('home_content')
+<!-- Home content End-->
 
 <!-- Footer -->
-{{--@include('homePartials.footer')--}}
-
+@include('homePartials.footer')
+<!-- Footer End-->
 
 <!-- Back to top -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="primary-button">
-                    <a href="#home">Back To Top</a>
-                </div>
-                <ul>
-                    <li><a href="#"><i class="fa fa-telegram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-                <p>Copyright &copy; 2021 Mory studio
 
-                    - Design: <a rel="nofollow noopener" href="#"><em>Mory studio</em></a></p>
-            </div>
-        </div>
-    </div>
-</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!--===============================================================================================-->
@@ -85,9 +50,10 @@
 <!--===============================================================================================-->
 <script src="{{'frontend/js/vendor/bootstrap.min.js'}}"></script>
 <script src="{{'frontend/js/plugins.js'}}"></script>
+<script src="{{'frontend/js/land.js'}}"></script>
 <!--===============================================================================================-->
 <script src="{{'frontend/js/main.js'}}"></script>
-<!--===============================================================================================-->
+{{--<!--===============================================================================================-->--}}
 <script>
     function openCity(cityName) {
         var i;

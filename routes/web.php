@@ -38,6 +38,9 @@ Route::get('/', function () {
 Route::get('/olddashboard', function () {
     return view('dashboard');
 });
+Route::get('/landing', function () {
+    return view('welcome');
+});
 Route::get('/category/logout', [CategoryController::class,'Logout'])->name('user.logout');
 
 

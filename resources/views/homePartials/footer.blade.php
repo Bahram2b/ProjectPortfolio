@@ -41,7 +41,7 @@
 <div class="horizontal-scroll2">
     <div class="horizontal-scroll"></div>
 </div>
-<footer>
+<footer id="contact-us">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -50,10 +50,10 @@
                 </div>
                 <ul>
                     <li><a href="#"><i class="fa fa-telegram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fa fa-google"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+
                 </ul>
                 <p>Copyright &copy; 2021 Mory studio
 

@@ -146,7 +146,7 @@ a:hover { color: #FF0; }
 .baner-content {
   padding-top: 30vh;
   text-align: center;
-  background-image: url(../img/Moryhome.jpg);
+  background-image: url(../img/mory2.jpeg);
 }
 
 .baner-content h1 {
@@ -241,11 +241,14 @@ h4, .h4 {
   margin: 20px auto 15px auto;
 }
 
-
+/**/
 
 .projects-content {
   padding-top: 20vh;
-  background-image: url(../img/3rd-section.jpg);
+
+  background-image: url(../img/portfolio2.jpg) ;
+    background-size: cover;
+
 }
 
 .projects-content .item img {
@@ -299,7 +302,7 @@ h4, .h4 {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 8vh;
-  background-image: url(../img/4th-section.jpg);
+  background-image: url(../img/story.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;

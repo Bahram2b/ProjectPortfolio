@@ -6,36 +6,36 @@
 
             </div>
             <div class="admin-info">
-                <div class="font-strong">{{Auth::user()->name}}</div><small>ادمین</small></div>
+                <div class="font-strong">{{Auth::user()->name}}</div><small>Admin</small></div>
         </div>
         <ul class="side-menu metismenu">
             <li>
                 <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-dashboard"></i>
-                    <span class="nav-label">داشبورد</span>
+                    <span class="nav-label">Dashboard</span>
                 </a>
             </li>
-            <li class="heading">امکانات</li>
+            <li class="heading">Portfolio</li>
             <li>
-                <a href="javascript:;"><i class="sidebar-item-icon fa fa-shopping-bag"></i>
-                    <span class="nav-label">محصول</span><i class="fa fa-angle-left arrow"></i></a>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-photo"></i>
+                    <span class="nav-label"> عکس ها</span><i class="fa fa-angle-left arrow"></i></a>
                 <ul class="nav-2-level collapse">
                     <li>
-                        <a href="{{route('Product.Index')}}">همه محصولات</a>
+                        <a href="{{route('Product.Index')}}">مدیریت</a>
                     </li>
                     <li>
-                        <a href="{{route('Product.Create')}}">اضافه کردن محصول</a>
+                        <a href="{{route('Product.Create')}}">Portraits</a>
                     </li>
                     <li>
-                        <a href="{{route('sub_cat_index')}}">  زیر دسته بندی ها</a>
+                        <a href="{{route('sub_cat_index')}}">Photo Manipulations</a>
                     </li>
                     <li>
-                        <a href="{{route('Coupon_index')}}">کد تخفیف</a>
+                        <a href="{{route('Coupon_index')}}">Product Photographs</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="javascript:;"><i class="sidebar-item-icon fa fa-bookmark"></i>
-                    <span class="nav-label">محتوا و محصول</span><i class="fa fa-angle-left arrow"></i></a>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-video-camera"></i>
+                    <span class="nav-label">فیلم ها</span><i class="fa fa-angle-left arrow"></i></a>
                 <ul class="nav-2-level collapse">
                     <li>
                         <a href="{{route('home.slider')}}">اسلایدر</a>
@@ -52,71 +52,6 @@
                 </ul>
             </li>
 
-            <li>
-                <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>
-                    <span class="nav-label">صفخه پروفایل</span><i class="fa fa-angle-left arrow"></i></a>
-                <ul class="nav-2-level collapse">
-                    <li>
-                        <a href="{{route('admin.pass')}}">تقییر رمز عبور</a>
-                    </li>
-                    <li>
-                        <a href="{{route('admin.profile')}}">اطلاعات پروفایل</a>
-                    </li>
-                    <li>
-                        <a href="{{route('user.logout')}}">خروج</a>
-                    </li>
-                    <li>
-                        <a href="form_validation.html">Form Validation</a>
-                    </li>
-                    <li>
-                        <a href="text_editors.html">Text Editors</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;"><i class="sidebar-item-icon fa fa-table"></i>
-                    <span class="nav-label">Tables</span><i class="fa fa-angle-left arrow"></i></a>
-                <ul class="nav-2-level collapse">
-                    <li>
-                        <a href="table_basic.html">Basic Tables</a>
-                    </li>
-                    <li>
-                        <a href="datatables.html">Datatables</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;"><i class="sidebar-item-icon fa fa-bar-chart"></i>
-                    <span class="nav-label">Charts</span><i class="fa fa-angle-left arrow"></i></a>
-                <ul class="nav-2-level collapse">
-                    <li>
-                        <a href="charts_flot.html">Flot Charts</a>
-                    </li>
-                    <li>
-                        <a href="charts_morris.html">Morris Charts</a>
-                    </li>
-                    <li>
-                        <a href="chartjs.html">Chart.js</a>
-                    </li>
-                    <li>
-                        <a href="charts_sparkline.html">Sparkline Charts</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;"><i class="sidebar-item-icon fa fa-map"></i>
-                    <span class="nav-label">Maps</span><i class="fa fa-angle-left arrow"></i></a>
-                <ul class="nav-2-level collapse">
-                    <li>
-                        <a href="maps_vector.html">Vector maps</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="icons.html"><i class="sidebar-item-icon fa fa-smile-o"></i>
-                    <span class="nav-label">Icons</span>
-                </a>
-            </li>
             <li class="heading">PAGES</li>
             <li>
                 <a href="javascript:;"><i class="sidebar-item-icon fa fa-envelope"></i>

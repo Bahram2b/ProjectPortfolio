@@ -15,6 +15,9 @@ class CreateClipsTable extends Migration
     {
         Schema::create('clips', function (Blueprint $table) {
             $table->id();
+            $table->string('title')->nullable();
+            $table->mediumText('description')->nullable();
+            $table->mediumText('link');
             $table->timestamps();
         });
     }

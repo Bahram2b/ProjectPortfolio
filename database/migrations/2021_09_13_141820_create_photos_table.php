@@ -20,7 +20,6 @@ class CreatePhotosTable extends Migration
             $table->string('image');
             $table->mediumText('description')->nullable();
             $table->mediumText('link')->nullable();
-            $table->
             $table->timestamps();
         });
     }

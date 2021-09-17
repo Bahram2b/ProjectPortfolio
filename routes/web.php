@@ -7,6 +7,7 @@ use App\Http\Controllers\SubCatergoryController;
 use App\Http\Controllers\CouponController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
@@ -35,9 +36,9 @@ Route::get('/', function () {
 //    return view('home',compact('Masks','Muggs','Tshirts','Cat'));
     return view('home');
 });
-Route::get('/olddashboard', function () {
-    return view('dashboard');
-});
+//Route::get('/olddashboard', function () {
+//    return view('dashboard');
+//});
 Route::get('/landing', function () {
     return view('welcome');
 });
@@ -53,9 +54,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 })->name('dashboard');
 // Admin routes
-Route::get('/slider', [HomeController::class,'HomeSlider'])->name('home.slider');
-Route::post('/slider/Add', [HomeController::class,'SliderStore'])->name('Slider.Store');
-Route::get('delete/slider/{id}', [HomeController::class,'SliderDestroy'])->name('Slider.Destroy');
+Route::get('/photo', [PhotoController::class,'index'])->name('Photo.index');
+Route::post('/photo/Add', [PhotoController::class,'store'])->name('Photo.Store');
+Route::get('delete/photo/{id}', [PhotoController::class,'destroy'])->name('Photo.Destroy');
 //Admin Profile
 Route::get('/Admin/ChangePassword/', [ProfileController::class,'AdminChangePass'])->name('admin.pass');
 Route::get('/Admin/ChangeProfile/', [ProfileController::class,'AdminChangeProfile'])->name('admin.profile');

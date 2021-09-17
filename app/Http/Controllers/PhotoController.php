@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Photo;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 
 class PhotoController extends Controller
@@ -14,7 +15,8 @@ class PhotoController extends Controller
      */
     public function index()
     {
-        //
+        $photo=Photo::latest()->paginate(6);
+        return view('Admin.Photo.index',compact('photo'));
     }
 
     /**
@@ -35,7 +37,26 @@ class PhotoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $photo= new Photo();
+        $photo->description=$request->description;
+        $photo->title=$request->title;
+        $photo->category=$request->category;
+        $file=$request->file('image');
+        if (!empty($file)) {
+            $image = time() .$file->getClientOriginalName();
+//            \Intervention\Image\Facades\Image::make($file)->resize(1050,500)->save('backend/img/photos/'.$image);
+//                $image = time() . $image;
+            $file->move("backend/img/photos/", $image);
+            $photo->image = $image;
+        }
+        $photo->save();
+        $notification=array(
+            'message'=>'عکس اضافه شد',
+            'alert-type'=>'success'
+        );
+//        $photo=Slider::paginate(6);
+        return redirect()->back()->with($notification);
+//        return  view('Admin.slider.index',compact('slider'));
     }
 
     /**
@@ -78,8 +99,19 @@ class PhotoController extends Controller
      * @param  \App\Models\Photo  $photo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Photo $photo)
+    public function destroy($id)
     {
-        //
+        {
+            $photos=Photo::findorfail($id);
+            $pathdelete="backend/img/photos/".$photos->image;
+            unlink($pathdelete);
+            Photo::destroy($id);
+            $notification=array(
+                'message'=>'عکس حذف شد',
+                'alert-type'=>'info'
+            );
+//        $photo=Slider::paginate(6);
+            return redirect()->back()->with($notification);
+        }
     }
 }

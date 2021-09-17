@@ -13,6 +13,9 @@
                 <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-dashboard"></i>
                     <span class="nav-label">Dashboard</span>
                 </a>
+                <a class="active" href={{url('/')}}>
+                    <span class="nav-label">صفحه اصلی</span>
+                </a>
             </li>
             <li class="heading">Portfolio</li>
             <li>
@@ -20,7 +23,7 @@
                     <span class="nav-label"> عکس ها</span><i class="fa fa-angle-left arrow"></i></a>
                 <ul class="nav-2-level collapse">
                     <li>
-                        <a href="{{route('Product.Index')}}">مدیریت</a>
+                        <a href="{{route('Photo.index')}}">مدیریت</a>
                     </li>
                     <li>
                         <a href="{{route('Product.Create')}}">Portraits</a>
@@ -38,7 +41,7 @@
                     <span class="nav-label">فیلم ها</span><i class="fa fa-angle-left arrow"></i></a>
                 <ul class="nav-2-level collapse">
                     <li>
-                        <a href="{{route('home.slider')}}">اسلایدر</a>
+                        <a href="{{route('Photo.index')}}">اسلایدر</a>
                     </li>
                     <li>
                         <a href="{{route('cat_index')}}">دسته بندی ها</a>

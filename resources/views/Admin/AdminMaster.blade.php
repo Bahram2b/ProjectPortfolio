@@ -10,11 +10,12 @@
     <title>ادمین پنل</title>
     <!-- GLOBAL MAINLY STYLES-->
 
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/fontawesome.css')}}" rel="stylesheet" />
-
+{{--    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />--}}
+{{--    <link href="{{asset('css/fontawesome.css')}}" rel="stylesheet" />--}}
+    <link href="{{asset('backend/vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{asset('backend/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" />
     <link href="{{asset('backend/vendors/themify-icons/css/themify-icons.css')}}" rel="stylesheet" />
+
 
     <!-- PLUGINS STYLES-->
     <link href="{{asset('backend/vendors/jvectormap/jquery-jvectormap-2.0.3.css')}}" rel="stylesheet" />
@@ -61,7 +62,7 @@
 
 
     <script src="{{asset('backend/vendors/jquery/dist/jquery.min.js')}}" type="text/javascript"></script>
-    <script src="{{asset('backend/vendors/jquery/dist/umd/popper.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('backend/vendors/popper.js/dist/umd/popper.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('backend/vendors/bootstrap/dist/js/bootstrap.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('backend/vendors/metisMenu/dist/metisMenu.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('backend/vendors/jquery-slimscroll/jquery.slimscroll.min.js')}}" type="text/javascript"></script>

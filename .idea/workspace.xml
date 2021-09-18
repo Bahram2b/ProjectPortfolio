@@ -11,7 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48a359be-9517-448c-bc14-48e0b4d03e00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backend/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backend/img/photos/originals/1631896784sd-Extreme-500-Portable-SSD-1440x370.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backend/img/photos/originals/1631898966maxresdefault.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/AdminMaster.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/AdminMaster.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Photo/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Photo/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +39,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>

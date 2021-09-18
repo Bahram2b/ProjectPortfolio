@@ -37,7 +37,7 @@ html {
 
 body {
   overflow-x: hidden;
-  color: #333;
+
     background: url("../img/admin.jpg" ) ;
     background-size: cover;
 }
@@ -45,31 +45,12 @@ body {
 
 a {
   cursor: pointer;
-  color: #3498db; }
+ }
 
-a:hover, a:focus {
-  text-decoration: none;
-  color: #1d6fa5; }
 
-a.link {
-  color: inherit; }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
 
-h6 {
-  font-weight: 600; }
 
-h1 sup, .h1 sup {
-  top: -10px; }
-
-h2 sup, .h2 sup {
-  font-size: 20px;
-  top: -7px; }
-
-h3 sup, .h3 sup {
-  font-size: 16px;
-  top: -5px; }
 
 small {
   font-size: 85%; }
@@ -1732,7 +1713,7 @@ body.fullscreen-mode {
   border-top: 1px solid #e1eaec; }
 
 .card-title {
-  font-size: 16px;
+  font-size: 40px;
   font-weight: 500;
   margin-bottom: 10px;
   margin-top: 0; }
@@ -1743,7 +1724,7 @@ body.fullscreen-mode {
   font-size: 13px; }
 
 .card-header, .card-footer {
-  background-color: inherit; }
+  background-color: #d4d4d4 ; }
 
 .form-control {
   -webkit-border-radius: 2px;
@@ -3025,7 +3006,9 @@ a.text-danger:hover, a.text-danger:focus {
 .side-menu .heading {
   padding: 12px 15px;
   display: block;
-  font-size: 13px; }
+  font-size: 13px;
+   font-weight: bold;
+}
 
 .side-menu li {
   outline: 0; }
@@ -3148,7 +3131,10 @@ body.fixed-layout.sidebar-mini .content-wrapper {
   -ms-flex-align: center;
   align-items: center;
   padding: 10px 15px;
-  background-color: #fff; }
+  background-color: rgb(1, 19, 67);
+    color: #c3bac3;
+
+}
 
 .page-wrapper {
   width: 100%;
@@ -3387,7 +3373,7 @@ body.has-backdrop .backdrop {
       color: #fff; }
 
 .page-sidebar {
-  background-color: rgba(2, 26, 100, 0.62)
+  background-color: rgba(2, 26, 100, 0.82)
 }
   .page-sidebar .admin-block .admin-info {
     color: #fff; }
@@ -3395,19 +3381,20 @@ body.has-backdrop .backdrop {
       color: #b4bcc8; }
 
 .side-menu .heading {
-  color: rgba(255, 255, 255, 0.4); }
+  color: rgb(208, 183, 54); }
 
 .side-menu > li a {
-  color: #b4bcc8; }
+  color: #f1f2f5;
+text-decoration: none!important;}
   .side-menu > li a:hover, .side-menu > li a:focus {
     color: #fff;
-    background-color: #3498db; }
+    background-color: rgba(12, 1, 133, 0.73); }
 
 .side-menu > li.active {
-  background-color: #2e4255; }
+  background-color:rgba(2, 26, 100, 0.82); }
   .side-menu > li.active > a, .side-menu > li.active > a:hover, .side-menu > li.active > a:focus {
-    color: #fff;
-    background-color: #3498db; }
+    color: #f5f5f5;
+    background-color: rgb(12, 1, 133); }
 
 .side-menu li a.active {
   color: #fff; }

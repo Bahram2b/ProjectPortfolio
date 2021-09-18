@@ -15,7 +15,7 @@
     <link href="{{asset('backend/vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{asset('backend/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" />
     <link href="{{asset('backend/vendors/themify-icons/css/themify-icons.css')}}" rel="stylesheet" />
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/2.1.1/angular-toastr.css" rel="stylesheet" />
 
     <!-- PLUGINS STYLES-->
     <link href="{{asset('backend/vendors/jvectormap/jquery-jvectormap-2.0.3.css')}}" rel="stylesheet" />
@@ -41,6 +41,7 @@
 
             <!-- START PAGE CONTENT-->
         @yield('admin')
+        </div>
         <!-- END PAGE CONTENT-->
             <footer class="page-footer">
                 <div class="font-13">  Copyright <b>2B Develop</b> - 2021 © </div>
@@ -51,12 +52,7 @@
     </div>
 
 
-    <!-- BEGIN PAGA BACKDROPS-->
-    <div class="sidenav-backdrop backdrop"></div>
-    <div class="preloader-backdrop">
-        <div class="page-preloader">Loading</div>
-    </div>
-    <!-- END PAGA BACKDROPS-->
+
     <!-- CORE PLUGINS-->
 
 
@@ -106,26 +102,26 @@
         }
         @endif
     </script>
-    <script>
-        $(document).on("click", "#delete", function(e){
-            e.preventDefault();
-            var link = $(this).attr("href");
-            swal({
-                title: "آیا از حذف مطمعن هستید؟",
-                text: "پس از پاک کردن امکان بازگشت اطلاعات وجود ندارد",
-                icon: "warning",
-                buttons: true,
-                dangerMode: true,
-            })
-                .then((willDelete) => {
-                    if (willDelete) {
-                        window.location.href = link;
-                    } else {
-                        swal("اطلاعات پاک نشده اند");
-                    }
-                });
-        });
-    </script>
+{{--    <script>--}}
+{{--        $(document).on("click", "#delete", function(e){--}}
+{{--            e.preventDefault();--}}
+{{--            var link = $(this).attr("href");--}}
+{{--            swal({--}}
+{{--                title: "آیا از حذف مطمعن هستید؟",--}}
+{{--                text: "پس از پاک کردن امکان بازگشت اطلاعات وجود ندارد",--}}
+{{--                icon: "warning",--}}
+{{--                buttons: true,--}}
+{{--                dangerMode: true,--}}
+{{--            })--}}
+{{--                .then((willDelete) => {--}}
+{{--                    if (willDelete) {--}}
+{{--                        window.location.href = link;--}}
+{{--                    } else {--}}
+{{--                        swal("اطلاعات پاک نشده اند");--}}
+{{--                    }--}}
+{{--                });--}}
+{{--        });--}}
+{{--    </script>--}}
 </body>
 
 </html>

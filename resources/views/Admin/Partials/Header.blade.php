@@ -26,7 +26,7 @@
         <!-- START TOP-RIGHT TOOLBAR-->
         <ul class="nav navbar-toolbar">
             <li class="dropdown dropdown-inbox">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope-o"></i>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa -envelope-o"></i>
                     <span class="badge badge-primary envelope-badge">9</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-left dropdown-menu-media">

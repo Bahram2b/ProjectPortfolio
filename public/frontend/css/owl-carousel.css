@@ -1,4 +1,4 @@
-/* 
+/*
  *  Core Owl Carousel CSS File
  *  v1.3.3
  */
@@ -36,15 +36,13 @@
   -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
-  
+
 .owl-carousel .owl-item{
   float: left;
 }
 
 .owl-controls {
-  @media (max-width: @screen-sm-max) {
-    top: -120px;
-  }
+
   top: -200px;
   width: 100%;
   text-align: center;
@@ -64,8 +62,8 @@
   z-index: 1;
   width: 50px;
   height: 50px;
-  z-index:10; 
-  background:#fff; 
+  z-index:10;
+  background:#fff;
   border: 1px solid #336699;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -75,21 +73,21 @@
 }
 
 .owl-controls .bg-prev:before{
-  content:""; 
-  display:block; 
-  position:absolute; 
-  z-index:-1; 
-  top:3px; 
-  left:3px; 
-  right:3px; 
-  bottom:3px; 
+  content:"";
+  display:block;
+  position:absolute;
+  z-index:-1;
+  top:3px;
+  left:3px;
+  right:3px;
+  bottom:3px;
   border:2px solid #336699
 }
 
 .owl-controls .prev {
   left: 15px;
   z-index: 11;
-  position: absolute; 
+  position: absolute;
   width: 50px;
   height: 50px;
   line-height: 32px;
@@ -115,9 +113,9 @@
   z-index: 1;
   width: 50px;
   height: 50px;
-  position:relative; 
-  z-index:10; 
-  background:#fff; 
+  position:relative;
+  z-index:10;
+  background:#fff;
   border: 1px solid #336699;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -127,21 +125,21 @@
 }
 
 .owl-controls .bg-next:before{
-  content:""; 
-  display:block; 
-  position:absolute; 
-  z-index:-1; 
-  top:3px; 
-  left:3px; 
-  right:3px; 
-  bottom:3px; 
+  content:"";
+  display:block;
+  position:absolute;
+  z-index:-1;
+  top:3px;
+  left:3px;
+  right:3px;
+  bottom:3px;
   border:2px solid #336699
 }
 
 .owl-controls .next {
   right: 15px;
   z-index: 11;
-  position: absolute; 
+  position: absolute;
   width: 50px;
   height: 50px;
   line-height: 32px;

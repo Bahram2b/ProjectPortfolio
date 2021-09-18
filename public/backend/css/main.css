@@ -37,8 +37,11 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: #f1f1f1;
-  color: #333; }
+  color: #333;
+    background: url("../img/admin.jpg" ) ;
+    background-size: cover;
+}
+
 
 a {
   cursor: pointer;
@@ -2838,7 +2841,7 @@ a.text-danger:hover, a.text-danger:focus {
   display: flex;
   height: 56px;
   position: relative;
-  background-color: #fff;
+  background-color: rgba(2, 26, 100, 0.85);
   margin: 0;
   border: 0;
   -webkit-border-radius: 0;
@@ -2884,7 +2887,7 @@ a.text-danger:hover, a.text-danger:focus {
       -ms-flex-align: center;
       align-items: center;
       padding: 15px;
-      color: #6d7c85; }
+      color: #efefef; }
     .header .navbar-toolbar > li .notify-signal {
       height: 6px;
       width: 6px;
@@ -2912,9 +2915,9 @@ a.text-danger:hover, a.text-danger:focus {
     .header .navbar-toolbar > li.active .notify-signal::before {
       display: block; }
     .header .navbar-toolbar .dropdown-notification a.dropdown-toggle .notify-signal {
-      background: #f75a5f; }
+      background: #b6bfd0; }
       .header .navbar-toolbar .dropdown-notification a.dropdown-toggle .notify-signal::before {
-        border-color: #f75a5f; }
+        border-color: #b6bfd0; }
   .header .navbar-search {
     padding: 0 15px; }
     .header .navbar-search .search-icon {
@@ -2935,7 +2938,7 @@ a.text-danger:hover, a.text-danger:focus {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
-      color: #6d7c85; }
+      color: #d5d8dd; }
     .header .navbar-search .form-control {
       border: 0;
       padding: .65rem 1.25rem .65rem 40px;
@@ -2956,7 +2959,7 @@ a.text-danger:hover, a.text-danger:focus {
         border-radius: 50%;
         margin-right: 10px; }
     .header .dropdown-user > .dropdown-menu .dropdown-item {
-      color: #6d7c85;
+      color: #ffffff;
     text-align: right;}
       .header .dropdown-user > .dropdown-menu .dropdown-item i {
         margin-left: 10px; }
@@ -3155,9 +3158,8 @@ body.fixed-layout.sidebar-mini .content-wrapper {
 
 .content-wrapper {
   position: relative;
-  background-color: #f7f7f7;
-  background-color: #f2f2f2;
-  background-color: #f1f1f1;
+
+
   margin-right: 220px;
   padding: 0 15px 60px 15px;
   -webkit-transition: margin .2s ease-in-out;
@@ -3192,7 +3194,7 @@ body.fixed-layout.sidebar-mini .content-wrapper {
     align-items: center; }
     .page-heading .breadcrumb li {
       float: none;
-      color: #868e96; }
+      color: #eaebee; }
       .page-heading .breadcrumb li a {
         color: inherit; }
       .page-heading .breadcrumb li + li:before {
@@ -3385,7 +3387,8 @@ body.has-backdrop .backdrop {
       color: #fff; }
 
 .page-sidebar {
-  background-color: #253544; }
+  background-color: rgba(2, 26, 100, 0.62)
+}
   .page-sidebar .admin-block .admin-info {
     color: #fff; }
     .page-sidebar .admin-block .admin-info small {
@@ -3418,7 +3421,7 @@ body.has-backdrop .backdrop {
 
 .header .page-brand {
   color: #fff;
-  background-color: #374f65; }
+  background-color: rgb(2, 26, 100); }
 
 .legendLabel {
   padding-left: 5px; }

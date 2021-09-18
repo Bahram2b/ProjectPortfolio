@@ -17,6 +17,7 @@ class CreatePhotosTable extends Migration
             $table->id();
             $table->string('title')->nullable();
             $table->enum('category', ['Portrait', 'Photo Manipulation','Product Photography']);
+            $table->string('thumbnail');
             $table->string('image');
             $table->mediumText('description')->nullable();
             $table->mediumText('link')->nullable();

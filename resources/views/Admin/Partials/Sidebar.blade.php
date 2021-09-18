@@ -10,7 +10,7 @@
         </div>
         <ul class="side-menu metismenu">
             <li>
-                <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-dashboard"></i>
+                <a class="active" href="{{route('dash_index')}}"><i class="sidebar-item-icon fa fa-dashboard"></i>
                     <span class="nav-label">Dashboard</span>
                 </a>
                 <a class="active" href={{url('/')}}>

@@ -11,7 +11,7 @@ use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
-use App\Models\Product;
+use App\Models\Photo;
 use App\Models\Category;
 
 /*
@@ -26,15 +26,18 @@ use App\Models\Category;
 */
 
 Route::get('/', function () {
-//    $Cat=Category::all();
-//    $Masks=Product::where('category_id',30)->where('status',1)->get();
-//    $Muggs=Product::where('category_id',27)->where('status',1)->get();
-//    $Tshirts=Product::where('category_id',1)->where('status',1)->get();
 
-//$product=Product::all();
-//    return view('home',compact('product'));
-//    return view('home',compact('Masks','Muggs','Tshirts','Cat'));
-    return view('home');
+    $portraits=Photo::where('category',"Portrait")->get();
+    $manipulation=Photo::where('category',"Photo Manipulation")->get();
+    $product=Photo::where('category',"Product Photography")->get();
+
+//    $product=Photo::where('category',27)->where('status',1)->get();
+//    $manipulation=Photo::where('category',1)->where('status',1)->get();
+
+
+    return view('home',compact('portraits','product','manipulation'));
+
+
 });
 //Route::get('/olddashboard', function () {
 //    return view('dashboard');

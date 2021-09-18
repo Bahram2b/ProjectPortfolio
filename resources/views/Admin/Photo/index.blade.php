@@ -16,7 +16,7 @@
                 <br>
 
                 <div class="table-wrapper">
-                    <table id="datatable1" class="table display responsive nowrap">
+                    <table id="datatable1" class="table table-sm">
                         <thead>
                         <tr class="text-right">
                             <th class="text-right">ردیف</th>
@@ -36,7 +36,7 @@
                                 <td>{{ $row->title }}</td>
                                 <td>{{ $row->category }}</td>
 
-                                <td height="50px;" width="160px;"> <img src="{{ URL("backend/img/photos/".$row->image) }}" style="max-height:120px " > </td>
+                                <td height="50px;" width="160px;"> <img src="{{ URL("backend/img/photos/originals/".$row->image) }}" style="max-height:120px " > </td>
                                 <td>{{ $row->description }}</td>
                                 <td>{{ $row->created_at->diffForHumans() }}</td>
                                 <td>

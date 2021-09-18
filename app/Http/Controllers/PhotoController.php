@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Photo;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class PhotoController extends Controller
 {
@@ -44,10 +45,17 @@ class PhotoController extends Controller
         $file=$request->file('image');
         if (!empty($file)) {
             $image = time() .$file->getClientOriginalName();
-//            \Intervention\Image\Facades\Image::make($file)->resize(1050,500)->save('backend/img/photos/'.$image);
-//                $image = time() . $image;
-            $file->move("backend/img/photos/", $image);
+            $thumbnail = "thumbnail".$image;
+
+            Image::make($file)->fit(300,180)->save('backend/img/photos/thumbnails/'.$thumbnail);
+//            Image::make($file)->fit(800, 600, function ($constraint) {
+//                $constraint->upsize()->save('backend/img/photos/thumbnails/'.$thumbnail);
+//            });
+            $file->move("backend/img/photos/originals/", $image);
             $photo->image = $image;
+
+            $photo->thumbnail = $thumbnail;
+
         }
         $photo->save();
         $notification=array(
@@ -103,7 +111,7 @@ class PhotoController extends Controller
     {
         {
             $photos=Photo::findorfail($id);
-            $pathdelete="backend/img/photos/".$photos->image;
+            $pathdelete="backend/img/photos/originals/".$photos->image;
             unlink($pathdelete);
             Photo::destroy($id);
             $notification=array(

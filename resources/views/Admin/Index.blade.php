@@ -1,4 +1,4 @@
-@extends('admin.AdminMaster')
+@extends('layouts.app')
 @section('admin')
 <div class="row">
     <div class="col-lg-3 col-md-6">

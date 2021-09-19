@@ -1,33 +1,21 @@
+{{--@extends('layouts.homeMaster')--}}
+{{--<!-- Photo contents  -->--}}
+{{--@section('home_content')--}}
+
+{{--<!-- Photo contents End -->--}}
+
+{{--@endsection--}}
+
 @extends('layouts.homeMaster')
-<!-- Slider -->
-@section('home_content')
 
-{{--@include('homePartials.slider')--}}
+@section('title', 'Photo')
 
-{{--<!-- Banner -->--}}
-{{--@include('homePartials.Trend')--}}
-
-
-
-
-<!--
-Vanilla Template
-https://templatemo.com/tm-526-vanilla
--->
-
-
-
-
-
-
-@include('homePartials.photoportfolio')
-<!-- End portfolio -->
-
-
-
-
-
+@section('sidemenu')
+    @parent
 
 
 @endsection
 
+@section('home_content')
+    @include('homePartials.photoportfolio')
+@endsection

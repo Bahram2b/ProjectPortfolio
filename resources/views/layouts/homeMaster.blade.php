@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <title>@yield('title') Portfolio </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -30,7 +30,10 @@
 <!-- End Header -->
 <!-- Cart -->
 <!-- Sidebar menu -->
-@include('homePartials.sidemenu')
+@section('sidemenu')
+    @include('homePartials.sidemenu')
+@show
+
 <!-- Sidebar menu End-->
 <!-- Home content-->
 

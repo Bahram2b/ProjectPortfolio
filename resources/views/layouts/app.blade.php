@@ -1,48 +1,128 @@
+
+
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"><link href="{{asset('')}}" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<html lang="en" dir="rtl">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>ادمین پنل</title>
+    <!-- GLOBAL MAINLY STYLES-->
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    {{--    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />--}}
+    {{--    <link href="{{asset('css/fontawesome.css')}}" rel="stylesheet" />--}}
+    <link href="{{asset('backend/vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('backend/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('backend/vendors/themify-icons/css/themify-icons.css')}}" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/2.1.1/angular-toastr.css" rel="stylesheet" />
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/bootstrap-grid.min.css')}}">
+    <!-- PLUGINS STYLES-->
+    <link href="{{asset('backend/vendors/jvectormap/jquery-jvectormap-2.0.3.css')}}" rel="stylesheet" />
+    <!-- THEME STYLES-->
+    <link href="{{asset('backend/css/main.css')}}" rel="stylesheet" />
+    <!-- PAGE LEVEL STYLES-->
+</head>
 
-        @livewireStyles
+<body class="fixed-navbar">
+@php
+    $userphoto = Auth::user()->profile_photo_path;
+@endphp
+<div class="page-wrapper">
+    <!-- START HEADER-->
+@include('admin.Partials.Header')
+<!-- END HEADER-->
+    <!-- START SIDEBAR-->
+@include('admin.Partials.Sidebar')
+<!-- END SIDEBAR-->
+    <div class="content-wrapper">
 
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
-    </head>
-    <body class="font-sans antialiased">
-        <x-jet-banner />
+        <div class="page-content fade-in-up ">
 
-        <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-menu')
-
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
-
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+            <!-- START PAGE CONTENT-->
+            @yield('admin')
         </div>
+        <!-- END PAGE CONTENT-->
+        <footer class="page-footer">
+            <div class="font-13">  Copyright <b>2B Develop</b> - 2021 © </div>
+            <a class="px-4" href="#" target="_blank"></a>
+            <div class="to-top"><i class="fa fa-angle-double-up"></i></div>
+        </footer>
+    </div>
+</div>
 
-        @stack('modals')
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-        @livewireScripts
-    </body>
+
+
+<!-- CORE PLUGINS-->
+
+
+
+<script src="{{asset('backend/vendors/jquery/dist/jquery.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('backend/vendors/popper.js/dist/umd/popper.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('backend/vendors/bootstrap/dist/js/bootstrap.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('backend/vendors/metisMenu/dist/metisMenu.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('backend/vendors/jquery-slimscroll/jquery.slimscroll.min.js')}}" type="text/javascript"></script>
+{{--    <script src="{{asset('backend/vendors/jquery-slimscroll/jquery.slimscroll.min.js')}} " type="text/javascript"></script>--}}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+{{--    <!-- PAGE LEVEL PLUGINS-->--}}
+{{--    <script src="{{asset('backend/vendors/chart.js/dist/Chart.min.js')}}" type="text/javascript"></script>--}}
+{{--    <script src="{{asset('backend/vendors/jvectormap/jquery-jvectormap-2.0.3.min.js')}}" type="text/javascript"></script>--}}
+{{--    <script src="{{asset('backend/vendors/jvectormap/jquery-jvectormap-world-mill-en.js')}}" type="text/javascript"></script>--}}
+{{--    <script src="{{asset('backend/vendors/jvectormap/jquery-jvectormap-us-aea-en.js')}}" type="text/javascript"></script>--}}
+<!-- CORE SCRIPTS-->
+<script src="{{asset('backend/js/app.min.js')}}" type="text/javascript"></script>
+{{--    <script src="{{asset('js/bootstrap.min.js')}}" type="text/javascript"></script>--}}
+{{--    <script src="{{asset('js/popper.min.js')}}" type="text/javascript"></script>--}}
+{{--    <script src="{{asset('js/jquery-3.6.0.min.js')}}" type="text/javascript"></script>--}}
+
+
+
+
+{{--    <!-- PAGE LEVEL SCRIPTS-->--}}
+{{--    <script src="{{asset('backend/js/scripts/dashboard_1_demo.js')}}" type="text/javascript"></script>--}}
+<script>
+
+    @if(Session::has('message'))
+    var type="{{Session::get('alert-type','info')}}"
+    toastr.options.positionClass = 'toast-bottom-left';
+    switch(type){
+
+        case 'info':
+            toastr.info("{{ Session::get('message') }}");
+            break;
+        case 'success':
+            toastr.success("{{ Session::get('message') }}");
+            break;
+        case 'warning':
+            toastr.warning("{{ Session::get('message') }}");
+            break;
+        case 'error':
+            toastr.error("{{ Session::get('message') }}");
+            break;
+    }
+    @endif
+</script>
+{{--    <script>--}}
+{{--        $(document).on("click", "#delete", function(e){--}}
+{{--            e.preventDefault();--}}
+{{--            var link = $(this).attr("href");--}}
+{{--            swal({--}}
+{{--                title: "آیا از حذف مطمعن هستید؟",--}}
+{{--                text: "پس از پاک کردن امکان بازگشت اطلاعات وجود ندارد",--}}
+{{--                icon: "warning",--}}
+{{--                buttons: true,--}}
+{{--                dangerMode: true,--}}
+{{--            })--}}
+{{--                .then((willDelete) => {--}}
+{{--                    if (willDelete) {--}}
+{{--                        window.location.href = link;--}}
+{{--                    } else {--}}
+{{--                        swal("اطلاعات پاک نشده اند");--}}
+{{--                    }--}}
+{{--                });--}}
+{{--        });--}}
+{{--    </script>--}}
+</body>
+
 </html>
+

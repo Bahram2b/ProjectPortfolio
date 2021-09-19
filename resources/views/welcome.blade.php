@@ -23,9 +23,9 @@
 {{--        <img src="frontend/landing/img/left.jpg" />--}}
 
         <div class="info">
-          
+
             <button>
-                <a href="#" class="button">Edited photos</a>
+                <a href="{{route('Photo.Portfolio')}}" class="button">Edited photos</a>
             </button>
         </div>
     </section>

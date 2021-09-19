@@ -1,4 +1,4 @@
-@extends('admin.AdminMaster')
+@extends('layouts.app')
 @section('admin')
     <div class="sl-mainpanel">
 

@@ -1,4 +1,4 @@
-@extends('admin.AdminMaster')
+@extends('layouts.app')
 @section('admin')
     <!--Section: profile info-->
     <section class="mb-5 text-center p-5">

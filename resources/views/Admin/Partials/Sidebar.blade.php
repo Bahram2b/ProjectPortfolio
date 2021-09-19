@@ -54,6 +54,22 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>
+                    <span class="nav-label">صفخه پروفایل</span><i class="fa fa-angle-left arrow"></i></a>
+                <ul class="nav-2-level collapse">
+                    <li>
+                        <a href="{{route('admin.pass')}}">تقییر رمز عبور</a>
+                    </li>
+                    <li>
+                        <a href="{{route('admin.profile')}}">اطلاعات پروفایل</a>
+                    </li>
+                    <li>
+                        <a href="{{route('user.logout')}}">خروج</a>
+                    </li>
+
+                </ul>
+            </li>
 
             <li class="heading">PAGES</li>
             <li>

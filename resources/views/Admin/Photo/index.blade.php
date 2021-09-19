@@ -1,29 +1,27 @@
 @extends('layouts.app')
 @section('admin')
-    <div class="sl-mainpanel">
 
 
-        <div class="sl-pagebody p-5">
-            <div class="sl-page-title">
-                <h4>لیست عکس ها</h4>
 
-            </div><!-- sl-page-title -->
-            <br>
-            <div class="card pd-20 pd-sm-40">
-                <h6 class="card-body-title">
-                    <a href="#" class="btn btn-sm btn-warning mt-5" style="float: right;" data-toggle="modal" data-target="#modaldemo3">اضافه کردن عکس جدید</a>
-                </h6>
-                <br>
+
+
+
+
+<div class="btn   btn-adn  mt-5">
+    <a href="#" class="text-decoration-none font-bold"  data-toggle="modal" data-target="#modaldemo3">اضافه کردن عکس جدید</a>
+
+</div>
+
 
                 <div class="table-wrapper">
-                    <table id="datatable1" class="table table-sm">
+                    <table id="datatable1" class="table table-dark table-striped table-hover table">
                         <thead>
-                        <tr class="text-right">
+                        <tr class="text-center">
                             <th class="text-right">ردیف</th>
                             <th class="text-right">اسم</th>
                             <th class="text-right">دسته بندی</th>
                             <th class="text-right">عکس</th>
-                            <th class="text-right">توضیحات</th>
+{{--                            <th class="text-right">توضیحات</th>--}}
                             <th class="text-right">تاریخ</th>
                             <th class="text-right">عملیات</th>
 
@@ -32,15 +30,15 @@
                         <tbody>
                         @foreach($photo as $key=>$row)
                             <tr>
-                                <td>{{ $photo->firstItem()+$loop->index }}</td>
-                                <td>{{ $row->title }}</td>
-                                <td>{{ $row->category }}</td>
+                                <td class="text-center">{{ $photo->firstItem()+$loop->index }}</td>
+                                <td class="text-center">{{ $row->title }}</td>
+                                <td class="text-center">{{ $row->category }}</td>
 
-                                <td height="50px;" width="160px;"> <img src="{{ URL("backend/img/photos/originals/".$row->image) }}" style="max-height:120px " > </td>
-                                <td>{{ $row->description }}</td>
-                                <td>{{ $row->created_at->diffForHumans() }}</td>
-                                <td>
-                                    <a href="{{ URL::to('edit/brand/'.$row->id) }} " class="btn btn-sm btn-info">Edit</a>
+                                <td height="50px;" width="160px;" class="text-center"> <img src="{{ URL("backend/img/photos/originals/".$row->image) }}" style="max-height:120px " > </td>
+{{--                                <td>{{ $row->description }}</td>--}}
+                                <td class="text-center">{{ $row->created_at->diffForHumans() }}</td>
+                                <td class="text-center">
+{{--                                    <a href="{{ URL::to('edit/brand/'.$row->id) }} " class="btn btn-sm btn-info">Edit</a>--}}
                                     <a href="{{ URL::to('delete/photo/'.$row->id)}}" class="btn btn-sm btn-danger" id="delete">Delete</a>
                                 </td>
 
@@ -52,12 +50,12 @@
                     </table>
                     {{$photo->links()}}
                 </div><!-- table-wrapper -->
-            </div><!-- card -->
 
 
 
 
-        </div><!-- sl-mainpanel -->
+
+
 
 
 

@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
     <title>@yield('title') Portfolio </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,4 +19,4 @@
     <!--===============================================================================================-->
     <script src="{{'frontend/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'}}"></script>
     <!--===============================================================================================-->
-</head>
+

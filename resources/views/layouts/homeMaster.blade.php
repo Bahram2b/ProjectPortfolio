@@ -1,4 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @section('header')
 @include('homePartials.header')
+    @show
+</head>
 <body>
 {{--<body class="animsition">--}}
 
@@ -19,6 +25,7 @@
 
 <!-- Footer -->
 @include('homePartials.footer')
+{{--@include('homePartials.instafooter')--}}
 <!-- Footer End-->
 
 <!-- Back to top -->

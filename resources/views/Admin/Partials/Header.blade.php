@@ -9,6 +9,7 @@
     <!-- GLOBAL MAINLY STYLES-->
 
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('css/owl.carousel.css')}}" rel="stylesheet" />
     {{--    <link href="{{asset('css/fontawesome.css')}}" rel="stylesheet" />--}}
 
     <link href="{{asset('backend/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" />

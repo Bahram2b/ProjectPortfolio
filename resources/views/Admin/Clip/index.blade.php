@@ -8,7 +8,7 @@
 
 
     <div class="btn   btn-adn  mt-5">
-        <a href="#" class="text-decoration-none font-bold"  data-toggle="modal" data-target="#modaldemo3">اضافه کردن عکس جدید</a>
+        <a href="#" class="text-decoration-none font-bold"  data-toggle="modal" data-target="#modaldemo3">اضافه کردن ویدیو</a>
 
     </div>
 
@@ -35,13 +35,13 @@
                     <td class="text-center">{{ $row->title }}</td>
 
 
-                    <td height="50px;" width="160px;" class="text-center"> <img src="{{ URL("backend/img/clips/thumbanils/".$row->image) }}" style="max-height:120px " > </td>
+                    <td height="50px;" width="160px;" class="text-center"> <img src="{{ URL("backend/img/clips/thumbnails/".$row->thumbnail) }}" style="max-height:120px " > </td>
                     <td class="text-center">{{ $row->link }}</td>
                     {{--                                <td>{{ $row->description }}</td>--}}
                     <td class="text-center">{{ $row->created_at->diffForHumans() }}</td>
                     <td class="text-center">
                         {{--                                    <a href="{{ URL::to('edit/brand/'.$row->id) }} " class="btn btn-sm btn-info">Edit</a>--}}
-                        <a href="{{ URL::to('delete/clip/'.$row->id)}}" class="btn btn-sm btn-danger" id="delete">Delete</a>
+                        <a href="{{route('Clip.Destroy', $row->id)}}" class="btn btn-sm btn-danger" id="delete">Delete</a>
                     </td>
 
                 </tr>
@@ -66,7 +66,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content tx-size-sm">
                 <div class="modal-header pd-x-20">
-                    <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">اضافه کردن عکس</h6>
+                    <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">اضافه کردن ویدیو</h6>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -81,27 +81,23 @@
                         </ul>
                     </div>
                 @endif
-                <form method="post" action="" enctype="multipart/form-data" >
+                <form method="post" action="{{route('Clip.Store')}}" enctype="multipart/form-data" >
                     @csrf
                     <div class="modal-body pd-20">
                         <div class="form-group">
                             <label for="title">عنوان</label>
-                            <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="title" name="title">
-                            <label for="category">دسته بندی</label>
-                            <select id="category" name="category">
-                                <option value="Portrait">Portrait</option>
-                                <option value="Photo Manipulation">Photo Manipulation</option>
-                                <option value="Product Photography">Product Photography</option>
-                            </select><br>
+                            <input type="text" class="form-control" id="title"  placeholder="title" name="title">
+                            <label for="title">Embed link یوتیوب</label>
+                            <input type="text" class="form-control" id="link"  placeholder="Embed youtube video link" name="link">
                             <label for="description">توضیحات</label>
-                            <input type="text" class="form-control" id="description" aria-describedby="emailHelp" placeholder="description" name="description">
+                            <input type="text" class="form-control" id="description"  placeholder="Description" name="description">
 
                         </div>
 
 
                         <div class="form-group">
-                            <label for="image">اسلاید</label>
-                            <input type="file" class="form-control" aria-describedby="emailHelp" placeholder="اسلاید" name="image">
+                            <label for="thumbnail">Thumbnail picture</label>
+                            <input type="file" class="form-control" aria-describedby="emailHelp" placeholder="Thumbnail image" name="thumbnail">
 
                         </div>
 

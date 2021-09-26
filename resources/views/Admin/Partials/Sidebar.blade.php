@@ -14,7 +14,13 @@
                     <span class="nav-label">Dashboard</span>
                 </a>
                 <a class="active" href={{url('/')}}>
-                    <span class="nav-label">صفحه اصلی</span>
+                    <span class="nav-label">Welcome Page</span>
+                </a>
+                <a class="active" href={{route('Video.Portfolio')}}>
+                    <span class="nav-label">Videos Portfolio</span>
+                </a>
+                <a class="active" href={{route('Photo.Portfolio')}}>
+                    <span class="nav-label">Photos Portfolio</span>
                 </a>
             </li>
             <li class="heading">Portfolio</li>

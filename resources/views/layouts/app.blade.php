@@ -13,13 +13,14 @@
     <!-- START SIDEBAR-->
 @include('admin.Partials.Sidebar')
 <!-- END SIDEBAR-->
+    <!-- START PAGE CONTENT-->
+
     <div class="content-wrapper">
 
         <div class="page-content fade-in-up ">
 <div class="container">
     @yield('admin')
 </div>
-            <!-- START PAGE CONTENT-->
     </div>
         <!-- END PAGE CONTENT-->
         <footer class="page-footer">

@@ -845,3 +845,99 @@ body.lb-disable-scrolling {
     font-weight: 700;
     color: #ff7d27;
 }
+
+.main {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+.videolightbox-thumb {
+    position: relative;
+    max-width: 250px;
+    height: 140px;
+    overflow: hidden;
+    /*background-image: url(https://i.ytimg.com/vi/Z0X2FyRl-9s/maxresdefault.jpg);*/
+    background-size: 100%;
+    background-position: 50% 50%;
+    transition: background-size 0.3s ease-in-out;
+    z-index: 1;
+    display: inline-block;
+}
+.videolightbox-thumb img{
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height:100px ;
+    width: 100px;
+}
+.videolightbox-thumb:hover {
+    background-size: 110%;
+}
+.videolightbox-thumb:hover .videolightbox-thumb-details {
+    opacity: 1;
+    transform: scale(1);
+}
+.videolightbox-thumb .videolightbox-thumb-details {
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.85);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(1.2);
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+}
+.videolightbox-thumb .videolightbox-thumb-details .videolightbox-button {
+    background: #58acfa;
+    display: inline-block;
+
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin: auto;
+}
+.videolightbox-thumb .videolightbox-thumb-details .videolightbox-video-details {
+    font-size: 0.9rem;
+}
+.videolightbox {
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: table;
+    opacity: 0;
+    z-index: 100;
+}
+.videolightbox .videolightbox-inner {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+.videolightbox .lb-content {
+    padding: 10px;
+    height: auto;
+    margin: auto;
+    max-width: 800px;
+    color: black;
+    text-align: center;
+}
+.videolightbox .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    border-radius: 5px;
+    background: white;
+}
+.videolightbox .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

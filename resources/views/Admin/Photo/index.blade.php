@@ -92,13 +92,13 @@
                                     <option value="Product Photography">Product Photography</option>
                                 </select><br>
                                 <label for="description">توضیحات</label>
-                                <input type="text" class="form-control" id="description" aria-describedby="emailHelp" placeholder="description" name="description">
+                                <input type="text" class="form-control" id="description" aria-describedby="emailHelp" value="This is the description of the " name="description">
 
                             </div>
 
 
                             <div class="form-group">
-                                <label for="image">اسلاید</label>
+                                <label for="image">عکس</label>
                                 <input type="file" class="form-control" aria-describedby="emailHelp" placeholder="اسلاید" name="image">
 
                             </div>

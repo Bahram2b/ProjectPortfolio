@@ -33,7 +33,7 @@
         <div class="info">
 {{--            <h1 class="white-wine">White Wines</h1>--}}
             <button>
-                <a href="#" class="button">Edited Videos</a>
+                <a href="{{route('Video.Portfolio')}}" class="button">Edited Videos</a>
             </button>
         </div>
     </section>

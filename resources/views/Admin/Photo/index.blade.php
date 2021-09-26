@@ -6,11 +6,13 @@
 
 
 
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        اضافه کردن عکس جدید
+    </button>
+{{--<div class="btn   btn-adn  mt-5">--}}
+{{--    <a href="#" class="text-decoration-none font-bold"  data-toggle="modal" data-target="#modaldemo3">اضافه کردن عکس جدید</a>--}}
 
-<div class="btn   btn-adn  mt-5">
-    <a href="#" class="text-decoration-none font-bold"  data-toggle="modal" data-target="#modaldemo3">اضافه کردن عکس جدید</a>
-
-</div>
+{{--</div>--}}
 
 
                 <div class="table-wrapper">
@@ -112,9 +114,60 @@
                         </div>
                     </form>
                 </div>
-            </div><!-- modal-dialog -->
-        </div><!-- modal -->
+            </div>
+        </div>
+    <!-- modal-dialog -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                        <form method="post" action="{{route('Photo.Store')}}" enctype="multipart/form-data" >
+                            @csrf
+                    <div class="form-group">
+                        <label for="title">عنوان</label>
+                        <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="title" name="title">
+                        <label for="category">دسته بندی</label>
+                        <select id="category" name="category">
+                            <option value="Portrait">Portrait</option>
+                            <option value="Photo Manipulation">Photo Manipulation</option>
+                            <option value="Product Photography">Product Photography</option>
+                        </select><br>
+                        <label for="description">توضیحات</label>
+                        <input type="text" class="form-control" id="description" aria-describedby="emailHelp" value="This is the description of the " name="description">
+
+                    </div>
 
 
+                    <div class="form-group">
+                        <label for="image">عکس</label>
+                        <input type="file" class="form-control" aria-describedby="emailHelp" placeholder="اسلاید" name="image">
+
+                    </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
 
 @endsection

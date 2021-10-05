@@ -1,22 +1,7 @@
-<!-- Home -->
-<div class="parallax-content baner-content" id="home">
-    <div class="container">
-        <div class="first-content">
-            <h1>Morteza Jelokhani</h1>
-            <span><em>Photos Portfolio</em> 2021</span>
-            <div class="primary-button">
-                {{--                <a href="#services">Discover More</a>--}}
-                <a href="">Portraits</a>
-                <a href={{route('Dashboard')}}>Photo Manipulations </a>
-                <a href="">Product Photographs</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Home -->
+
 
 <!-- manipulation -->
-<div class="manipulation-content" id="our-story">
+<div class="manipulation-content" id="sec-1">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -40,7 +25,7 @@
 <!-- manipulation end -->
 
 <!-- portrait -->
-<div class=" portrait-content" id="portrait">
+<div class=" portrait-content" id="sec-2">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -64,7 +49,7 @@
 <!-- portrait -->
 
 <!-- portfolio -->
-<div class="product-content" id="product">
+<div class="product-content" id="sec-3">
 
 
     <div class="container">

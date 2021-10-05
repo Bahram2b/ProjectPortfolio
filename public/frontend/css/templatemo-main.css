@@ -1,11 +1,9 @@
-/*
 
-Vanilla Template
 
-https://templatemo.com/tm-526-vanilla
-
-*/
-
+@font-face {
+    font-family: "main";
+    src: url("../fonts/Raleway-ExtraBold.ttf");
+}
 p {
   font-size: 15px;
   line-height: 25px;
@@ -19,20 +17,23 @@ section {
 body {
   position: relative; /* we need this for the scrollspy */
   font-size: 14px;
+    font-family: "main", sans-serif;
+    color: #caced2;
+    background-color: #f2f2f2;
 }
 
-a { color: #3CC; }
 
-a:hover { color: #FF0; }
 
 /*----------
   NAV
 ----------*/
-
+.fixed-side-navbar span {
+  margin-right: 10px;
+}
 .fixed-side-navbar {
   position: fixed;
   top: 50%;
-  right: 0;
+  right: 50px;
   z-index: 99999;
   margin-top: -100px;
   text-align: right;
@@ -44,18 +45,18 @@ a:hover { color: #FF0; }
   background: transparent;
 }
 .fixed-side-navbar:hover .nav > li > a > span {
-  color: rgba(0, 0, 0, 0.5);
+    color: #caced2;
   display: block;
-  background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.31)!important;
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 13px;
   padding: 2px 12px;
   border-radius: 15px;
 }
 .fixed-side-navbar .nav > li a.active {
   background-color: transparent;
-  color: black;
+  color: #a4cdee
 }
 .fixed-side-navbar .nav > li a.active:after {
   -webkit-transform: scale(0.9);
@@ -65,12 +66,12 @@ a:hover { color: #FF0; }
   content: '';
   position: absolute;
   top: 50%;
-  right: 17px;
-  margin-top: -8px;
-  width: 16px;
-  height: 16px;
+  right: 27px;
+  margin-top: -9.5px;
+  width: 22px;
+  height: 22px;
   background: transparent;
-  border: 2px solid #fff;
+  border: 5px solid #2e3236;
   border-radius: 10px;
 }
 .nav>li {
@@ -89,16 +90,20 @@ a:hover { color: #FF0; }
   -webkit-transition: all .2s;
   transition: all .2s;
 }
+.fixed-side-navbar .nav > li a:hover > span {
+    color: #debf86;
+    display: block;
+}
 .fixed-side-navbar .nav > li a:after {
   content: '';
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 32px;
   margin-top: -5px;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 10px;
-  background: rgba(250, 250, 250, 0.75);
+  background: #dead38;
   -webkit-transition: all .3s;
   transition: all .3s;
   -webkit-transform: scale(0.6);
@@ -111,10 +116,7 @@ a:hover { color: #FF0; }
   border-color: black;
   boder-right: 0;
 }
-.fixed-side-navbar .nav > li a:hover > span {
-  color: black;
-  display: block;
-}
+
 
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
@@ -124,13 +126,13 @@ a:hover { color: #FF0; }
 
 .primary-button a {
   display: inline-block;
-  background-color: #ff7d27;
+  background-color: #54585c;
   padding: 15px 24px;
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 11px;
-  color: #fff;
-  font-weight: 700;
+  color:#debf86;
+    font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.5px;
 }
@@ -146,15 +148,14 @@ a:hover { color: #FF0; }
 .baner-content {
   padding-top: 30vh;
   text-align: center;
-  background-image: url(../img/mory2.jpeg);
+  background-image: url(../img/istockphoto-1190671385-612x612.jpg);
 }
 
 .baner-content h1 {
   margin-top: 0px;
-  font-size: 128px;
-  color: #fff;
+  font-size: 30px;
+  color: #ffd291;
   font-weight: 900;
-  text-transform: uppercase;
   margin-bottom: 0px;
 }
 
@@ -272,7 +273,7 @@ h4, .h4 {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 8vh;
-  background-image: url(../img/manipulation.jpg);
+  background-image: url(../img/hand.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -729,9 +730,9 @@ body.lb-disable-scrolling {
 }
 /*portfolio*/
 .portrait-content {
-    padding-top: 20vh;
-
-    background-image: url(../img/po1.jpg) ;
+    padding-top: 30vh;
+    min-height: 90vh;
+    background-image: url(../img/mory-middleee.jpg) ;
     background-size: cover;
     padding-bottom: 20vh;
 
@@ -744,9 +745,11 @@ body.lb-disable-scrolling {
 .portrait-content .item {
     margin: 15px;
 }
-
+.text-content{
+    background-color: rgba(0, 0, 0, 0.51) !important;
+}
 .portrait-content .item .text-content {
-    background-color: #fff;
+
     text-align: center;
     padding: 20px;
 }
@@ -769,9 +772,9 @@ body.lb-disable-scrolling {
 /*portfolio manipulation*/
 .manipulation-content {
 
-    padding-top: 25vh;
+    padding-top: 35vh;
     padding-bottom: 25vh;
-    background-image: url(../img/manipulation.jpg);
+    background-image: url(../img/hand.jpg);
     background-attachment: fixed;
     min-height: 100vh;
     background-size: cover;
@@ -809,7 +812,7 @@ body.lb-disable-scrolling {
 /*portfolio product*/
 
 .product-content {
-    padding-top: 25vh;
+    padding-top: 35vh;
     padding-bottom: 25vh;
     background-image: url(../img/manipulation.jpg);
     background-attachment: fixed;

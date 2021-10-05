@@ -12,14 +12,14 @@ class PhotoController extends Controller
 
     public function index()
     {
-        $photo=Photo::latest()->paginate(11);
+        $photo=Photo::latest()->paginate(10);
         return view('Admin.Photo.index',compact('photo'));
     }
 
 
     public function create()
     {
-        //
+//        return file('resources/views/ajaxfile.php');
     }
 
     public function store(Request $request)
@@ -66,9 +66,19 @@ class PhotoController extends Controller
     }
 
 
-    public function update(Request $request, Photo $photo)
+    public function update(Request $request, $id)
     {
-        //
+
+        $data=Photo::findOrNew($id);
+        $data->category=$request->category;
+        $data->title=$request->title;
+        $data->description=$request->description;
+        $data->save();
+        $notification=array(
+            'message'=>'مشخصات عکس ویرایش شد',
+            'alert-type'=>'success'
+        );
+        return Redirect()->back()->with($notification);
     }
 
 

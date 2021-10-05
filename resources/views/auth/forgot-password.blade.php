@@ -1,34 +1,38 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
 
-        <div class="mb-4 text-sm text-gray-600">
-            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
-        </div>
+<!DOCTYPE html>
+<html lang="en" >
 
-        @if (session('status'))
-            <div class="mb-4 font-medium text-sm text-green-600">
-                {{ session('status') }}
-            </div>
-        @endif
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Admin Login</title>
+    <!-- GLOBAL MAINLY STYLES-->
+    <link href="{{asset('backend/css/login.css')}}" rel="stylesheet" />
 
-        <x-jet-validation-errors class="mb-4" />
 
-        <form method="POST" action="{{ route('password.email') }}">
+</head>
+
+<body>
+<div id="container">
+    <div id="logo_bar">
+        {{--        <img id="logo" src="" alt="logo"> --}}
+        <span></span>
+    </div>
+    <div id="form_box">
+        <form action="{{ route('password.email') }}" id="contact_form" method="post">
             @csrf
+            <p id="form_heading">Forget Password</p>
+            <input id="email"  type="email" placeholder="Enter your Email address" name="email" ><br />
 
-            <div class="block">
-                <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            </div>
+            <input type="submit" ><br />
 
-            <div class="flex items-center justify-end mt-4">
-                <x-jet-button>
-                    {{ __('Email Password Reset Link') }}
-                </x-jet-button>
-            </div>
         </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+

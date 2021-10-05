@@ -44,13 +44,12 @@ Route::get('/photo-portfolio', function () {
     $product=Photo::where('category',"Product Photography")->get();
     return view('photohome',compact('portraits','product','manipulation'));})->name('Photo.Portfolio');
 Route::get('/video-portfolio', function () {
-    $portraits=Photo::where('category',"Portrait")->get();
-    $manipulation=Photo::where('category',"Photo Manipulation")->get();
-    $product=Photo::where('category',"Product Photography")->get();
-    $clip=Clip::all();
-    return view('videohome',compact('portraits','product','manipulation','clip'));})->name('Video.Portfolio');
-Route::get('/videos-portfolio', function () {return view('welcome');})->name('Clip.portfolio');
-Route::get('/category/logout', [CategoryController::class,'Logout'])->name('user.logout');
+    $broll=Clip::where('category',"Broll")->get();
+    $motion=Clip::where('category',"Motion")->get();
+    $product=Clip::where('category',"Product")->get();
+
+    return view('videohome',compact('broll','motion','product'));})->name('Video.Portfolio');
+
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -60,8 +59,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
             return view('admin.index',compact('user'));})->name('Dashboard');
 // Admin routes
 Route::middleware(['auth:sanctum', 'verified'])->get('/photo/management', [PhotoController::class,'index'])->name('Photo.index');
-Route::post('/photo/Add', [PhotoController::class,'store'])->name('Photo.Store');
+Route::post('/photo/add', [PhotoController::class,'store'])->name('Photo.Store');
+Route::post('/photo/edit', [PhotoController::class,'create'])->name('Photo.Edit');
 Route::middleware(['auth:sanctum', 'verified'])->get('delete/photo/{id}', [PhotoController::class,'destroy'])->name('Photo.Destroy');
+Route::middleware(['auth:sanctum', 'verified'])->get('photo/update/{id}', [PhotoController::class,'update'])->name('Photo.Update');
 // Admin Clips
 Route::middleware(['auth:sanctum', 'verified'])->get('/clip/management', [ClipController::class,'index'])->name('Clip.index');
 Route::post('/clip/Add', [ClipController::class,'store'])->name('Clip.Store');
@@ -72,4 +73,4 @@ Route::get('/Admin/ChangeProfile/', [ProfileController::class,'AdminChangeProfil
 Route::post('/Admin/UpdatePassword/', [ProfileController::class,'AdminPassUpdate'])->name('password.update');
 Route::post('/Admin/UpdateProfile/', [ProfileController::class,'AdminProfileUpdate'])->name('profile.update');
 
-
+Route::get('/category/logout', [CategoryController::class,'Logout'])->name('user.logout');

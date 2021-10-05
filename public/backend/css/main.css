@@ -3,27 +3,28 @@
 @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
 @import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
-.perfont{
-    font-family: iransans;!important;
-}
-.perfont2{
-    font-family: main;!important;
 
-}
 .persian{
     direction: rtl;
     text-align: right;
 }
 @font-face {
-    font-family: iransans;
+    font-family: "iransans";
     src: url("../fonts/iranSans/IRANSansWeb(FaNum)_Light.eot");
     src: url("../fonts/iranSans/IRASansWeb(FaNum)_Light.ttf");
     src: url("../fonts/iranSans/IRANSansWeb(FaNum)_Light.woff");
 }@font-face {
-    font-family: main;
+    font-family: "main";
     src: url("../fonts/bziba/pixelboy-BZiba.eot");
     src: url("../fonts/bziba/pixelboy-BZiba.ttf");
     src: url("../fonts/bziba/pixelboy-BZiba.woff");
+}
+.perfont{
+    font-family: "iransans", serif;!important;
+}
+.perfont2{
+    font-family: "main", serif;!important;
+
 }
 .clf:after, .clf:before {
   content: '';
@@ -37,8 +38,9 @@ html {
 
 body {
   overflow-x: hidden;
+    font-family: "iransans", serif;!important;
 
-    background: url("../img/admin.jpg" ) ;
+    background: url("../img/black_cubes_3-wallpaper-1920x1080.jpg" ) ;
     background-size: cover;
 }
 
@@ -2822,7 +2824,7 @@ a.text-danger:hover, a.text-danger:focus {
   display: flex;
   height: 56px;
   position: relative;
-  background-color: rgba(2, 26, 100, 0.85);
+  background-color: rgba(82, 87, 91, 0.75);
   margin: 0;
   border: 0;
   -webkit-border-radius: 0;
@@ -3131,7 +3133,7 @@ body.fixed-layout.sidebar-mini .content-wrapper {
   -ms-flex-align: center;
   align-items: center;
   padding: 10px 15px;
-  background-color: rgb(1, 19, 67);
+  background-color: rgba(46, 50, 54, 0.73);
     color: #c3bac3;
 
 }
@@ -3373,7 +3375,7 @@ body.has-backdrop .backdrop {
       color: #fff; }
 
 .page-sidebar {
-  background-color: rgba(2, 26, 100, 0.82)
+  background-color: rgba(80, 84, 88, 0.8);
 }
   .page-sidebar .admin-block .admin-info {
     color: #fff; }
@@ -3408,7 +3410,8 @@ text-decoration: none!important;}
 
 .header .page-brand {
   color: #fff;
-  background-color: rgb(2, 26, 100); }
+  background-color: rgba(46, 50, 54, 0.78)
+}
 
 .legendLabel {
   padding-left: 5px; }

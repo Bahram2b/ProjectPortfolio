@@ -6,6 +6,7 @@
     @show
 </head>
 <body>
+
 {{--<body class="animsition">--}}
 
 <!-- Header -->
@@ -19,7 +20,12 @@
 
 <!-- Sidebar menu End-->
 <!-- Home content-->
+<!-- Home Baner-->
+@section('baner')
+    @include('homePartials.baner')
+@show
 
+<!-- Home Baner-->
 @yield('home_content')
 <!-- Home content End-->
 

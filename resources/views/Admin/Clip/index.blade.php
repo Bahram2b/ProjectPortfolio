@@ -40,7 +40,7 @@
                     {{--                                <td>{{ $row->description }}</td>--}}
                     <td class="text-center">{{ $row->created_at->diffForHumans() }}</td>
                     <td class="text-center">
-                        {{--                                    <a href="{{ URL::to('edit/brand/'.$row->id) }} " class="btn btn-sm btn-info">Edit</a>--}}
+                                                            <a href="{{ URL::to('edit/brand/'.$row->id) }} " class="btn btn-sm btn-info">Edit</a>
                         <a href="{{route('Clip.Destroy', $row->id)}}" class="btn btn-sm btn-danger" id="delete">Delete</a>
                     </td>
 

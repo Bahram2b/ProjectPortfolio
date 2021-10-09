@@ -12,39 +12,7 @@
 <script src="{{asset('backend/js/app.min.js')}}" type="text/javascript"></script>
 {{--    <script src="{{asset('v3.3.7/js/bootstrap.min.js')}}" type="text/javascript"></script>--}}
 <script src="{{asset('js/bootstrap.min.js')}}" type="text/javascript"></script>
-<script>
-    $(function() {
-        //Take the data from the TR during the event button
-        $('table').on('click', 'button.editingTRbutton',function (ele) {
-            //the <tr> variable is use to set the parentNode from "ele
-            var tr = ele.target.parentNode.parentNode;
 
-            //I get the value from the cells (td) using the parentNode (var tr)
-            var id = tr.cells[0].textContent;
-            var title = tr.cells[1].textContent;
-            var category = tr.cells[2].textContent;
-            var image = tr.cells[3].textContent;
-            var description = tr.cells[4].textContent;
-            // var phone = tr.cells[4].textContent;
-            // var level = tr.cells[5].textContent;
-
-            //Prefill the fields with the gathered information
-            $('h5.modal-title').html('ویرایش عکس : '+title);
-            $('#edittitle').val(title);
-            $("#editcategory").val(category).attr('Portrait', 'Photo Manipulation','Product Photography');
-
-            $('#editimage').val(image);
-            $('#editdescription').val(description);
-            // $('#editPhone').val(phone);
-            // $('#editId').val(id);
-            // $("#editLevel").val(level).attr('selected', 'selected');
-
-            //If you need to update the form data and change the button link
-            $("form#ModalForm").attr('action', 'update/'+id);
-            $("a#saveModalButton").attr('href','update/'+id);
-        });
-    });
-</script>
 
 {{--    <script src="{{asset('js/bootstrap.min.js')}}" type="text/javascript"></script>--}}
 

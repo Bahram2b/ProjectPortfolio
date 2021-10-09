@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: "main";
-    src: url("../../fonts/Raleway-ExtraBold.ttf");
+    src: url("../../../../public/fonts/Raleway-Bold.ttf");
 }
 html, body {
     padding: 0;

@@ -24,7 +24,7 @@
             <p id="form_heading">Admin Login</p>
             <input type="email"  name="email" placeholder="Enter Email" required=""><br />
             <input   type="password" placeholder="Enter Password" name="password" required=""><br />
-            <input type="checkbox" id="checkbox"><label for="checkbox" style="color:white; font-size:15px;">Remember Me</label><br />
+            <input type="checkbox" name="remember" id="remember_me"><label for="remember" style="color:white; font-size:15px;">Remember Me</label><br />
             <input type="submit" ><br />
             <a href="{{ route('password.request') }}" style="color:white; font-size:15px;">Forget Password</a>   <br> <br>
         </form>

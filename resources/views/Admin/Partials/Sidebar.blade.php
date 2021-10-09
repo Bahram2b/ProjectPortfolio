@@ -26,10 +26,10 @@
             <li class="heading">Portfolio</li>
             <li>
                 <a href="javascript:;"><i class="sidebar-item-icon fa fa-photo"></i>
-                    <span class="nav-label"> عکس ها</span><i class="fa fa-angle-left arrow"></i></a>
+                    <span class="nav-label">Photos</span><i class="fa fa-angle-left arrow"></i></a>
                 <ul class="nav-2-level collapse">
                     <li>
-                        <a href="{{route('Photo.index')}}">مدیریت</a>
+                        <a href="{{route('Photo.index')}}">Management</a>
                     </li>
                     <li>
                         <a href="">Portraits</a>
@@ -44,26 +44,26 @@
             </li>
             <li>
                 <a href="javascript:;"><i class="sidebar-item-icon fa fa-video-camera"></i>
-                    <span class="nav-label">فیلم ها</span><i class="fa fa-angle-left arrow"></i></a>
+                    <span class="nav-label">Videos</span><i class="fa fa-angle-left arrow"></i></a>
                 <ul class="nav-2-level collapse">
                     <li>
-                        <a href="{{route('Clip.index')}}">مدیریت</a>
+                        <a href="{{route('Clip.index')}}">Management</a>
                     </li>
 
                 </ul>
             </li>
             <li>
-                <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>
-                    <span class="nav-label">صفخه پروفایل</span><i class="fa fa-angle-left arrow"></i></a>
+                <a href="javascript:;"><i class="sidebar-item-icon fa fa-hamburger"></i>
+                    <span class="nav-label">Profile Edit</span><i class="fa fa-angle-left arrow"></i></a>
                 <ul class="nav-2-level collapse">
                     <li>
-                        <a href="{{route('admin.pass')}}">تقییر رمز عبور</a>
+                        <a href="{{route('admin.pass')}}">Change Password</a>
                     </li>
                     <li>
-                        <a href="{{route('admin.profile')}}">اطلاعات پروفایل</a>
+                        <a href="{{route('admin.profile')}}">Personal Info</a>
                     </li>
                     <li>
-                        <a href="{{route('user.logout')}}">خروج</a>
+                        <a href="{{route('user.logout')}}">Logout</a>
                     </li>
 
                 </ul>
@@ -72,75 +72,84 @@
             <li class="heading">PAGES</li>
             <li>
                 <a href="javascript:;"><i class="sidebar-item-icon fa fa-envelope"></i>
-                    <span class="nav-label">Mailbox</span><i class="fa fa-angle-left arrow"></i></a>
+                    <span class="nav-label">Coming Soon</span><i class="fa fa-angle-left arrow"></i></a>
                 <ul class="nav-2-level collapse">
                     <li>
-                        <a href="mailbox.html">Inbox</a>
+                        <a href="">Videos</a>
                     </li>
                     <li>
-                        <a href="mail_view.html">Mail view</a>
+                        <a href="">Photos</a>
                     </li>
                     <li>
-                        <a href="mail_compose.html">Compose mail</a>
+                        <a href="">Welcome Page</a>
                     </li>
                 </ul>
+
             </li>
             <li>
-                <a href="calendar.html"><i class="sidebar-item-icon fa fa-calendar"></i>
-                    <span class="nav-label">Calendar</span>
+                <a class="active orange" href="{{route('user.logout')}}"><i class="sidebar-item-icon fa fa-power-off"></i>
+                    <span class="nav-label">Logout</span>
+                </a>
+
                 </a>
             </li>
-            <li>
-                <a href="javascript:;"><i class="sidebar-item-icon fa fa-file-text"></i>
-                    <span class="nav-label">Pages</span><i class="fa fa-angle-left arrow"></i></a>
-                <ul class="nav-2-level collapse">
-                    <li>
-                        <a href="invoice.html">Invoice</a>
-                    </li>
-                    <li>
-                        <a href="profile.html">Profile</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="register.html">Register</a>
-                    </li>
-                    <li>
-                        <a href="lockscreen.html">Lockscreen</a>
-                    </li>
-                    <li>
-                        <a href="forgot_password.html">Forgot password</a>
-                    </li>
-                    <li>
-                        <a href="error_404.html">404 error</a>
-                    </li>
-                    <li>
-                        <a href="error_500.html">500 error</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;"><i class="sidebar-item-icon fa fa-sitemap"></i>
-                    <span class="nav-label">Menu Levels</span><i class="fa fa-angle-left arrow"></i></a>
-                <ul class="nav-2-level collapse">
-                    <li>
-                        <a href="javascript:;">Level 2</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <span class="nav-label">Level 2</span><i class="fa fa-angle-left arrow"></i></a>
-                        <ul class="nav-3-level collapse">
-                            <li>
-                                <a href="javascript:;">Level 3</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">Level 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
+
+{{--            <li>--}}
+{{--                <a href=""><i class="sidebar-item-icon fa fa-calendar"></i>--}}
+{{--                    <span class="nav-label">Videos</span>--}}
+{{--                </a>--}}
+{{--            </li>--}}
+{{--            <li>--}}
+{{--                <a href="javascript:;"><i class="sidebar-item-icon fa fa-file-text"></i>--}}
+{{--                    <span class="nav-label">Videos</span><i class="fa fa-angle-left arrow"></i></a>--}}
+{{--                <ul class="nav-2-level collapse">--}}
+{{--                    <li>--}}
+{{--                        <a href="invoice.html">Invoice</a>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="profile.html">Profile</a>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="login.html">Login</a>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="register.html">Register</a>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="lockscreen.html">Lockscreen</a>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="forgot_password.html">Forgot password</a>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="error_404.html">404 error</a>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="error_500.html">500 error</a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li>--}}
+{{--                <a href="javascript:;"><i class="sidebar-item-icon fa fa-sitemap"></i>--}}
+{{--                    <span class="nav-label">Welcome Page</span><i class="fa fa-angle-left arrow"></i></a>--}}
+{{--                <ul class="nav-2-level collapse">--}}
+{{--                    <li>--}}
+{{--                        <a href="javascript:;">Level 2</a>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <a href="javascript:;">--}}
+{{--                            <span class="nav-label">Level 2</span><i class="fa fa-angle-left arrow"></i></a>--}}
+{{--                        <ul class="nav-3-level collapse">--}}
+{{--                            <li>--}}
+{{--                                <a href="javascript:;">Level 3</a>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <a href="javascript:;">Level 3</a>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
         </ul>
     </div>
 </nav>

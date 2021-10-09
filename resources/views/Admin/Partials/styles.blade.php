@@ -9,6 +9,7 @@
     <!-- GLOBAL MAINLY STYLES-->
 
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/>
+    <link href="{{asset('css/fontawesome.min.css')}}" rel="stylesheet"/>
     {{--    <link href="{{asset('v4/css/bootstrap.min.css')}}" rel="stylesheet"/>--}}
 
 

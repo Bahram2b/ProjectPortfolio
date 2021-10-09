@@ -1,9 +1,10 @@
 @extends('layouts.app')
 @section('admin')
     <!--Section: profile info-->
-    <section class="mb-5 text-center p-5">
+    <div class="container">
+    <section class="mb-5 text-center p-5 orange">
 
-        <h3>اطلاعات پروفایل</h3>
+        <h3>Profile info</h3>
 
         <form action="{{route('profile.update')}}" method="post"  class=" perfont persian" enctype="multipart/form-data">
             @csrf
@@ -15,23 +16,23 @@
 {{--            @endif--}}
 
             <div class="mb-3">
-                <label for="imager" class="form-label">عکس پروفایل</label>
+                <label for="imager" class="form-label">profile picture</label>
                 <input class="form-control form-control-sm col-2" id="imager" name="profile_photo_path" type="file">
             </div>
 
             <div class="md-form md-outline">
                 <label data-error="wrong"  data-success="right" for="name">نام</label>
-                <input type="text" id="name" value="{{$user->name}}" name="name" class="form-control col-5">
+                <input  type="text" id="name" value="{{$user->name}}" name="name" class="form-control col-5">
             </div>
-            <div class="md-form md-outline">
-                <label data-error="wrong" data-success="right" for="email">ایمیل</label>
+            <div class="md-form md-outline mb-5">
+                <label data-error="wrong" data-success="right" for="email">Email</label>
                 <input type="text" id="email" name="email" value="{{$user->email}}" class="form-control col-5">
                 @error('email')
                 <span class="text-danger">{{$message}}</span>
                 @enderror
             </div>
 
-            <button type="submit" class="btn btn-primary mb-4">بروزرسانی</button>
+            <button type="submit" class="btn btn-primary mb-4">Update</button>
 
         </form>
 
@@ -83,6 +84,6 @@
             </div>
         @endif
     </section>
-
+    </div>
     <!--Section: profile info-->
 @endsection

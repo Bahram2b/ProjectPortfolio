@@ -63,10 +63,12 @@ Route::post('/photo/add', [PhotoController::class,'store'])->name('Photo.Store')
 Route::post('/photo/edit', [PhotoController::class,'create'])->name('Photo.Edit');
 Route::middleware(['auth:sanctum', 'verified'])->get('delete/photo/{id}', [PhotoController::class,'destroy'])->name('Photo.Destroy');
 Route::middleware(['auth:sanctum', 'verified'])->get('photo/update/{id}', [PhotoController::class,'update'])->name('Photo.Update');
+
 // Admin Clips
 Route::middleware(['auth:sanctum', 'verified'])->get('/clip/management', [ClipController::class,'index'])->name('Clip.index');
 Route::post('/clip/Add', [ClipController::class,'store'])->name('Clip.Store');
 Route::middleware(['auth:sanctum', 'verified'])->get('delete/clip/{id}', [ClipController::class,'destroy'])->name('Clip.Destroy');
+Route::middleware(['auth:sanctum', 'verified'])->get('clip/clipupdate/{id}', [ClipController::class,'update'])->name('Clip.Update');
 //Admin Profile
 Route::get('/Admin/ChangePassword/', [ProfileController::class,'AdminChangePass'])->name('admin.pass');
 Route::get('/Admin/ChangeProfile/', [ProfileController::class,'AdminChangeProfile'])->name('admin.profile');

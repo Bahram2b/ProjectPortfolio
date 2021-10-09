@@ -1,6 +1,6 @@
 
 body {
-    background: url("../img/admin.jpg" ) ;
+    background: url("../img/black_cubes_3-wallpaper-1920x1080.jpg" ) ;
 
     background-size: cover;
     font-size: 25px;
@@ -32,6 +32,10 @@ body {
 /*    max-height: 50px;*/
 /*    vertical-align: middle;*/
 /*}*/
+@font-face {
+    font-family: "main";
+    src: url("../../../public/fonts/Raleway-Bold.ttf");
+}
 #form_box {
     background: rgba(0, 0, 0, 0.5);
     width: 500px;

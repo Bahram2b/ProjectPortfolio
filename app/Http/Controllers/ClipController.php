@@ -62,9 +62,20 @@ class ClipController extends Controller
         //
     }
 
-    public function update(Request $request, Clip $clip)
+    public function update(Request $request, $id)
     {
-        //
+
+        $data=Clip::findOrNew($id);
+        $data->category=$request->category;
+        $data->title=$request->title;
+        $data->description=$request->description;
+        $data->link=$request->link;
+        $data->save();
+        $notification=array(
+            'message'=>'مشخصات ویدیو ویرایش شد',
+            'alert-type'=>'success'
+        );
+        return Redirect()->back()->with($notification);
     }
 
     public function destroy($id)

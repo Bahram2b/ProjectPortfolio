@@ -12,7 +12,7 @@
 {{--    <link href="{{asset('v4/css/bootstrap.min.css')}}" rel="stylesheet"/>--}}
 
 
-{{--        <link href="{{asset('css/fontawesome.css')}}" rel="stylesheet" />--}}
+        <link href="{{asset('css/fontawesome.min.css')}}" rel="stylesheet" />
 
     <link href="{{asset('backend/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" />
 
@@ -38,7 +38,7 @@
         <!-- START TOP-LEFT TOOLBAR-->
         <ul class="nav navbar-toolbar" style="padding-right: 0;">
             <li>
-                <a class="nav-link sidebar-toggler js-sidebar-toggler"><i class="ti-menu"></i></a>
+                <a class="nav-link sidebar-toggler js-sidebar-toggler "><i class="ti-menu fa fa-toggle-right orange"></i></a>
             </li>
             <li>
 {{--                <form class="navbar-search" action="javascript:;">--}}
